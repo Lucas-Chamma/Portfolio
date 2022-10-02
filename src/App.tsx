@@ -1,51 +1,32 @@
-import React from 'react';
-import { Table } from 'reactstrap';
+import './App.css'
+import $ from "jquery";
+import "jquery-ui-dist/jquery-ui";
 
-const App = () => {
-  return (
-    <Table responsive>
-    <thead>
-      <tr>
-        <th>#</th>
-        <th>Table heading</th>
-        <th>Table heading</th>
-        <th>Table heading</th>
-        <th>Table heading</th>
-        <th>Table heading</th>
-        <th>Table heading</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <th scope="row">1</th>  
-        <td>Table cell</td>
-        <td>Table cell</td>
-        <td>Table cell</td>
-        <td>Table cell</td>
-        <td>Table cell</td>
-        <td>Table cell</td>
-      </tr>
-      <tr>
-        <th scope="row">2</th>
-        <td>Table cell</td>
-        <td>Table cell</td>
-        <td>Table cell</td>
-        <td>Table cell</td>
-        <td>Table cell</td>
-        <td>Table cell</td>
-      </tr>
-      <tr>
-        <th scope="row">3</th>
-        <td>Table cell</td>
-        <td>Table cell</td>
-        <td>Table cell</td>
-        <td>Table cell</td>
-        <td>Table cell</td>
-        <td>Table cell</td>
-      </tr>
-    </tbody>
-  </Table>
+function App() {
+  return(
+      <div>
+          <nav className='nav-bar'>
+            <a href=''><p className="logo">&lsaquo;LC/&rsaquo;</p></a>  
+            
+            <ul className='menu'> 
+              <li><a href="#home">Home</a></li>
+              <li><a href="/">Sobre</a></li>
+              <li><a href="/">Experiência</a></li>
+              <li><a href="/">Projetos</a></li>
+            </ul>
+          </nav>  
+          
+          <div className='section' id="home">
+              <div className='texto-principal'>
+                  <p> Ola, sou  <p>Lucas Chamma</p>  desenvolvedor Full-Stack</p>
+                   
+              </div>
+          </div>
+          
+      </div>
+      
+    
   );
 }
 
-export default App;
+export default App
